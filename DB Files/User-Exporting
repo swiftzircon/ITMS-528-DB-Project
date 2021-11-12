@@ -1,0 +1,14 @@
+First install percona-toolkit:
+
+	sudo apt-get install percona-toolkit
+
+Then you want to sign into the mysql database... : 
+
+	mysql -uroot -p
+
+Lastly, once you're done creating users, use this command, but be sure to include the names
+of every account you created after the --only and separate names with commas. Also, be sure to be in the github DB files folder when doing this command, as it'll dump the file there. Also, change the version name when outputting to v02, v03, etc. accordingly:
+
+
+	sudo pt-show-grants --ask-pass --only Piotr,etc > ITMS-528-DB-Users_v01.sql		
+
