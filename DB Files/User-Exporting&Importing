@@ -12,3 +12,5 @@ of every account you created after the --only and separate names with commas. Al
 
 	sudo pt-show-grants --ask-pass --only Piotr,etc > ITMS-528-DB-Users_v01.sql		
 
+
+Importing users is also not hard! Here's how you use the ITMS-528-DB-Users SQL file. You open the newest version (whether that's version v02, or etc) and then in MySQL Workbench, navigate to the query tab that's open by default, and copy all the contents of the users.sql and paste it all into the query, and then just hit the lightning bolt to run it all. That should add all the users and their current privileges to your workbench database and sql server.
