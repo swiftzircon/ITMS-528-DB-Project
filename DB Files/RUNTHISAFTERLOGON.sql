@@ -1,0 +1,1 @@
+SELECT * FROM `itms-528-database`.notification;
