@@ -1,1 +1,1 @@
-SELECT * FROM `itms-528-database`.notification;
+SELECT temp_column FROM `itms-528-database`.notification;
